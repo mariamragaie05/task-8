@@ -12,7 +12,7 @@ if (score < 100 && score >= 85) {
   console.log("You got an F");
 } else if (score > 100 || score < 0) {
   console.log("Invalid Score");
-} else if (typeof score != Number) {
+} else if (isNaN(score)) {
   console.log("Not a Number");
 } else if (score == 100) {
   console.log("Perfect Score");
